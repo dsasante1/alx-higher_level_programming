@@ -6,6 +6,7 @@ student class
 
 class Student:
     """student attributs"""
+
     def __init__(self, first_name, last_name, age):
         """Initializes the student"""
         self.first_name = first_name
@@ -17,7 +18,7 @@ class Student:
         return self.__dict__
 
     def to_json(self, attrs=None):
-        """ retrieve the class dictionary representation"""
+        """retrieve the class dictionary representation"""
         new_dic = {}
         if attrs is not None:
             for att in attrs:

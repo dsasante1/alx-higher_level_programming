@@ -8,6 +8,6 @@ def append_write(filename="", text=""):
     """
     Append text
     """
-    with open(filename, 'a', encoding='utf8') as file:
+    with open(filename, "a", encoding="utf8") as file:
         n = file.write(text)
     return n
